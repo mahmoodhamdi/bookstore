@@ -1,3 +1,4 @@
+import 'package:bookstore/contants.dart';
 import 'package:bookstore/featuers/splash/presenation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -12,13 +13,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return GetMaterialApp(debugShowCheckedModeBanner: false,
       title: 'Bookly App',
       theme: ThemeData(
-      
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+       scaffoldBackgroundColor: kPrimaryColor,
+       brightness: Brightness.dark
+       ),
       home: const SplashView(),
     );
   }
