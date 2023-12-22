@@ -1,5 +1,6 @@
 import 'package:bookstore/core/utils/assets.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
@@ -9,19 +10,19 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 40),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 50),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Image.asset(
             AssetsData.logo,
-            height: 18,
+            height: 30,
           ),
           IconButton(
             onPressed: () {},
             icon: const Icon(
-              Icons.search_outlined,
-              size: 25,
+              FontAwesomeIcons.magnifyingGlass,
+              size: 30,
             ),
           ),
         ],
