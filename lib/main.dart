@@ -7,18 +7,25 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
+  late AnimationController animationController;
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(debugShowCheckedModeBanner: false,
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Bookly App',
       theme: ThemeData(
-       scaffoldBackgroundColor: kPrimaryColor,
-       brightness: Brightness.dark
-       ),
+          fontFamily: "GT Sectra",
+          scaffoldBackgroundColor: kPrimaryColor,
+          brightness: Brightness.dark),
       home: const SplashView(),
     );
   }
