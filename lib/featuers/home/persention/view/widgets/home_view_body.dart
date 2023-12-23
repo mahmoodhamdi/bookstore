@@ -1,3 +1,4 @@
+import 'package:bookstore/core/utils/text_styles.dart';
 import 'package:bookstore/featuers/home/persention/view/widgets/custom_appbar.dart';
 import 'package:bookstore/featuers/home/persention/view/widgets/featuers_books_listview.dart';
 import 'package:flutter/material.dart';
@@ -7,11 +8,22 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        CustomAppBar(),
-        Expanded(child: FeaturedBooksListView()),
-      ],
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 24.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          CustomAppBar(),
+          FeaturedBooksListView(),
+          SizedBox(
+            height: 50,
+          ),
+          Text(
+            "Best Seller",
+            style: TextStyles.titleMedium,
+          )
+        ],
+      ),
     );
   }
 }
