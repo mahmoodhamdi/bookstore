@@ -1,4 +1,7 @@
+import 'package:bookstore/contants.dart';
 import 'package:bookstore/core/utils/assets.dart';
+import 'package:bookstore/core/utils/text_styles.dart';
+import 'package:bookstore/featuers/home/persention/view/widgets/book_rating_overview.dart';
 import 'package:flutter/material.dart';
 
 class BestSellerListviewItem extends StatelessWidget {
@@ -23,6 +26,42 @@ class BestSellerListviewItem extends StatelessWidget {
                   image: AssetImage(AssetsData.testImage),
                 ),
               ),
+            ),
+          ),
+          const SizedBox(
+            width: 30,
+          ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  width: MediaQuery.of(context).size.width * .5,
+                  child: Text(
+                    "Harry Potter and the Goblet of Fire",
+                    maxLines: 2,
+                    overflow: TextOverflow.clip,
+                    style: TextStyles.textStyle20
+                        .copyWith(fontFamily: kGtSectraFine),
+                  ),
+                ),
+                const SizedBox(height: 3),
+                const Text(
+                  "J.K Rowling",
+                  style: TextStyles.textStyle14,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "19.99 \$",
+                      style: TextStyles.textStyle20
+                          .copyWith(fontWeight: FontWeight.bold),
+                    ),
+                    const BookRatingOverview(),
+                  ],
+                ),
+              ],
             ),
           ),
         ],
