@@ -1,4 +1,5 @@
 import 'package:bookstore/core/utils/text_styles.dart';
+import 'package:bookstore/featuers/home/persention/view/widgets/best_seller_listview_item.dart';
 import 'package:bookstore/featuers/home/persention/view/widgets/custom_appbar.dart';
 import 'package:bookstore/featuers/home/persention/view/widgets/featuers_books_listview.dart';
 import 'package:flutter/material.dart';
@@ -20,10 +21,11 @@ class HomeViewBody extends StatelessWidget {
           ),
           Text(
             "Best Seller",
-            style: TextStyles.titleMedium,
-          )
+            style: TextStyles.textStyle18,
+          ),
+          BestSellerListviewItem(),
         ],
       ),
     );
-  }
+  } 
 }
