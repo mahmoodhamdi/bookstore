@@ -1,6 +1,6 @@
 import 'package:bookstore/core/utils/text_styles.dart';
-import 'package:bookstore/featuers/home/persention/view/widgets/book_rating_overview.dart';
-import 'package:bookstore/featuers/home/persention/view/widgets/custom_book_image.dart';
+import 'package:bookstore/featuers/home/presentation/view/widgets/book_rating_overview.dart';
+import 'package:bookstore/featuers/home/presentation/view/widgets/custom_book_image.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsSection extends StatelessWidget {

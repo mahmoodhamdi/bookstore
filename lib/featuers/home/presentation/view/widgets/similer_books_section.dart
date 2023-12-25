@@ -1,5 +1,5 @@
 import 'package:bookstore/core/utils/text_styles.dart';
-import 'package:bookstore/featuers/home/persention/view/widgets/similer_books_listview.dart';
+import 'package:bookstore/featuers/home/presentation/view/widgets/similer_books_listview.dart';
 import 'package:flutter/material.dart';
 
 class SimilerBooksSection extends StatelessWidget {

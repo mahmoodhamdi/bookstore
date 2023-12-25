@@ -1,4 +1,4 @@
-import 'package:bookstore/featuers/home/persention/view/widgets/home_view_body.dart';
+import 'package:bookstore/featuers/home/presentation/view/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
