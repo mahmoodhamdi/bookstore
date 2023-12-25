@@ -1,7 +1,9 @@
 import 'package:bookstore/core/utils/text_styles.dart';
+import 'package:bookstore/featuers/home/persention/view/widgets/book_actions.dart';
 import 'package:bookstore/featuers/home/persention/view/widgets/book_details_appbar.dart';
 import 'package:bookstore/featuers/home/persention/view/widgets/book_rating_overview.dart';
 import 'package:bookstore/featuers/home/persention/view/widgets/custom_book_image.dart';
+import 'package:bookstore/featuers/home/persention/view/widgets/similer_books_listview.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
@@ -12,7 +14,7 @@ class BookDetailsViewBody extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30.0),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+      child: Column(children: [
         const BookDetailsViewAppBar(),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .20),
@@ -41,8 +43,28 @@ class BookDetailsViewBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
         ),
         const SizedBox(
-          height: 18,
+          height: 37,
         ),
+        const BookActions(),
+        const SizedBox(
+          height: 50,
+        ),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Text(
+            "You can also like",
+            style: TextStyles.textStyle14.copyWith(
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        const SimilerBooksListView(),
+        const SizedBox(
+          height: 40,
+        )
       ]),
     );
   }
