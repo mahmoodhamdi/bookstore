@@ -1,8 +1,8 @@
 import 'package:bookstore/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 
-class CustomFeaturedListItem extends StatelessWidget {
-  const CustomFeaturedListItem({
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({
     super.key,
   });
 

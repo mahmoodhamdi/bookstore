@@ -1,4 +1,4 @@
-import 'package:bookstore/featuers/home/persention/view/widgets/custom_featured_list_item.dart';
+ import 'package:bookstore/featuers/home/persention/view/widgets/custom_book_image.dart';
 import 'package:flutter/material.dart';
 
 class FeaturedBooksListView extends StatelessWidget {
@@ -13,7 +13,7 @@ class FeaturedBooksListView extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal, 
         itemBuilder: (BuildContext context, int index) {
-          return const CustomFeaturedListItem();
+          return const CustomBookImage();
         },
       ),
     );
