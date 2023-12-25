@@ -1,9 +1,7 @@
-import 'package:bookstore/contants.dart';
 import 'package:bookstore/core/utils/assets.dart';
-import 'package:bookstore/featuers/home/persention/view/home_view.dart';
 import 'package:bookstore/featuers/splash/presenation/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
-import 'package:get/route_manager.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -21,14 +19,12 @@ class _SplashViewBodyState extends State<SplashViewBody>
     super.initState();
     initSlidingAnimation();
     Future.delayed(const Duration(seconds: 2), () {
-      Get.to(() => const HomeView(),
-          transition: Transition.fadeIn, duration: kTransitionDuration);
+      GoRouter.of(context).pushReplacement("/homeView");
     });
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     animationController.dispose();
   }

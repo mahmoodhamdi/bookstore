@@ -56,7 +56,7 @@ class BestSellerListviewItem extends StatelessWidget {
                     Text(
                       "19.99 \$",
                       style: TextStyles.textStyle20
-                          .copyWith(fontWeight: FontWeight.bold),
+                          .copyWith(fontWeight: FontWeight.normal),
                     ),
                     const BookRatingOverview(),
                   ],
