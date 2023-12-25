@@ -14,6 +14,7 @@ class BookRatingOverview extends StatelessWidget {
         const Icon(
           FontAwesomeIcons.solidStar,
           color: Color(0xffffdd4f),
+          size: 16,
         ),
         const SizedBox(
           width: 6.3,
@@ -27,8 +28,9 @@ class BookRatingOverview extends StatelessWidget {
         ),
         Text(
           "(2390)",
-          style:
-              TextStyles.textStyle14.copyWith(color: const Color(0xff707070)),
+          style: TextStyles.textStyle14.copyWith(
+              color: const Color(0xffffffff).withOpacity(.5),
+              fontWeight: FontWeight.w600),
         ),
       ],
     );
