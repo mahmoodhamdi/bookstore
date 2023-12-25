@@ -23,11 +23,12 @@ class SearchTextField extends StatelessWidget {
     );
   }
 }
-  OutlineInputBorder buildOutlineInputBorder() {
-    return const OutlineInputBorder(
-      borderSide: BorderSide(color: Colors.white),
-      borderRadius: BorderRadius.all(
-        Radius.circular(12),
-      ),
-    );
-  }
+
+OutlineInputBorder buildOutlineInputBorder() {
+  return const OutlineInputBorder(
+    borderSide: BorderSide(color: Colors.white),
+    borderRadius: BorderRadius.all(
+      Radius.circular(12),
+    ),
+  );
+}
