@@ -1,11 +1,10 @@
 import 'package:bookstore/core/utils/text_styles.dart';
-import 'package:bookstore/featuers/home/presentation/view/widgets/similer_books_listview.dart';
+import 'package:bookstore/featuers/home/presentation/view/widgets/similar_books_list_view.dart';
 import 'package:flutter/material.dart';
 
-class SimilerBooksSection extends StatelessWidget {
-  const SimilerBooksSection({
-    super.key,
-  });
+
+class SimilarBooksSection extends StatelessWidget {
+  const SimilarBooksSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +12,7 @@ class SimilerBooksSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "You can also like",
+          'You can also like',
           style: TextStyles.textStyle14.copyWith(
             fontWeight: FontWeight.w600,
           ),
@@ -21,10 +20,7 @@ class SimilerBooksSection extends StatelessWidget {
         const SizedBox(
           height: 16,
         ),
-        const SimilerBooksListView(),
-        const SizedBox(
-          height: 40,
-        ),
+        const SimilarBooksListview(),
       ],
     );
   }

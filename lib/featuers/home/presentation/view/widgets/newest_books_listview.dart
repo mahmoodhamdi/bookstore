@@ -6,8 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class NewsetBooksListview extends StatelessWidget {
-  const NewsetBooksListview({super.key});
-
+  const NewsetBooksListview({
+    super.key,
+  });
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<NewsetBooksCubit, NewsetBooksState>(
@@ -21,6 +22,7 @@ class NewsetBooksListview extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: BooksListviewItem(
+                  bookModel: state.books[index],
                   imageUrl: state.books[index].volumeInfo.imageLinks!.thumbnail,
                 ),
               );
