@@ -1,14 +1,14 @@
 import 'package:bookstore/contants.dart';
 import 'package:bookstore/core/utils/app_router.dart';
-import 'package:bookstore/core/utils/assets.dart';
 import 'package:bookstore/core/utils/text_styles.dart';
 import 'package:bookstore/featuers/home/presentation/view/widgets/book_rating_overview.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class BooksListviewItem extends StatelessWidget {
-  const BooksListviewItem({super.key});
-
+  const BooksListviewItem({super.key, required this.imageUrl});
+  final String imageUrl;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -18,20 +18,8 @@ class BooksListviewItem extends StatelessWidget {
         child: Row(
           children: [
             AspectRatio(
-              aspectRatio: 2.5 / 4,
-              child: Container(
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(16),
-                  ),
-                  color: Colors.amber,
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage(AssetsData.testImage),
-                  ),
-                ),
-              ),
-            ),
+                aspectRatio: 2.5 / 4,
+                child: CachedNetworkImage(imageUrl: imageUrl)),
             const SizedBox(
               width: 30,
             ),

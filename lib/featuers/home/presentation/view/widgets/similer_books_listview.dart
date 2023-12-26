@@ -12,7 +12,10 @@ class SimilerBooksListView extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
-          return const CustomBookImage();
+          return const CustomBookImage(
+            imageUrl:
+                "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D",
+          );
         },
       ),
     );

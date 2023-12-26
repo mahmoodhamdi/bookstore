@@ -1,7 +1,7 @@
 import 'package:bookstore/core/utils/text_styles.dart';
-import 'package:bookstore/featuers/home/presentation/view/widgets/best_seller_listview.dart';
 import 'package:bookstore/featuers/home/presentation/view/widgets/custom_appbar.dart';
 import 'package:bookstore/featuers/home/presentation/view/widgets/featuers_books_listview.dart';
+import 'package:bookstore/featuers/home/presentation/view/widgets/newest_books_listview.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -36,7 +36,7 @@ class HomeViewBody extends StatelessWidget {
         SliverFillRemaining(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 30.0),
-            child: NewestBooksListview(),
+            child: NewsetBooksListview(),
           ),
         ),
       ],
