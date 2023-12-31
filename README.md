@@ -1,5 +1,5 @@
 # bookstore
-
+<a href="https://wakatime.com/badge/user/018c9017-daf8-45c1-be71-8b16fd238022/project/018c901f-b070-4f92-9e84-e2268ee983d0"><img src="https://wakatime.com/badge/user/018c9017-daf8-45c1-be71-8b16fd238022/project/018c901f-b070-4f92-9e84-e2268ee983d0.svg" alt="wakatime"></a>
 A new Flutter project.
 
 ## Getting Started
