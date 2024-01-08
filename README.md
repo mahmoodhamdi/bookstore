@@ -7,14 +7,8 @@ Welcome to the Bookstore Concept App, an innovative Flutter project dedicated to
 ### Dark Theme
 
 <div align="center">
-<<<<<<< HEAD
-   <img src="assets/images/booklist.png" alt="Book List" width="200"/>  
+    <img src="assets/images/booklist.png" alt="Book List" width="200"/>  
   <img src="assets/images/Deatails.png" alt="Deatails" width="200"/>
-
-=======
-   <img src="assets/images/Book Dark.png" alt="Dark Book List Screen" width="200"/> <>
-   <img src="assets/images/Book Dark 3.png" alt="Dark Book Details Screen" width="200"/>
->>>>>>> 6baa2f640e4b10449e4fcbbf4afb7381fef7ac62
  </div>
 
 ## Project Overview
