@@ -1,16 +1,29 @@
-# bookstore
-<a href="https://wakatime.com/badge/user/018c9017-daf8-45c1-be71-8b16fd238022/project/018c901f-b070-4f92-9e84-e2268ee983d0"><img src="https://wakatime.com/badge/user/018c9017-daf8-45c1-be71-8b16fd238022/project/018c901f-b070-4f92-9e84-e2268ee983d0.svg" alt="wakatime"></a>
-A new Flutter project.
+# Bookstore Concept App
 
-## Getting Started
+Welcome to the Bookstore Concept App, an innovative Flutter project dedicated to offering a seamless and captivating experience for exploring books sourced from the Google Books API. This project embraces a dark theme to provide an immersive reading environment and implements robust Flutter architecture following MVVM design principles.
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+### Dark Theme
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<div align="center">
+  <img src="assets/images/Book Dark.png" alt="Dark Book List Screen" width="200"/>
+  <img src="assets/images/Book Dark 3.png" alt="Dark Book Details Screen" width="200"/>
+ </div>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Overview
+
+### Features
+
+- **Book Exploration:** Seamlessly browse a vast collection of books sourced from the Google Books API.
+- **Dark Theme:** Immerse yourself in an optimal reading environment with the exclusively designed dark theme.
+- **Book Details:** Access detailed information about each book, including synopsis, author details, and reviews.
+- **Book Preview:** Preview select pages of a book to get a glimpse before making a choice.
+
+### Tech Stack
+
+- **Flutter:** Harness the power of Flutter for cross-platform mobile development, ensuring a smooth and consistent experience.
+- **MVVM Architecture:** Implement the Model-View-ViewModel design pattern for a scalable, organized, and easily maintainable codebase.
+- **State Management:** Utilize efficient state management techniques for handling application state in a streamlined manner.
+- **Google Books API Integration:** Seamlessly integrate and retrieve book data from the Google Books API using efficient network requests.
+- **SOLID Principles:** Adhere to SOLID principles to ensure a robust and maintainable software architecture.
