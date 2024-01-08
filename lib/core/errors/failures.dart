@@ -1,46 +1,47 @@
 import 'package:dio/dio.dart';
 
 abstract class Failure {
-  final String errMessege;
+  final String errMessage;
 
-  const Failure(this.errMessege);
+  const Failure(this.errMessage);
 }
 
 class ServerFailure extends Failure {
-  ServerFailure(super.errMessege);
-  factory ServerFailure.fromResponseError(statusCode, dynamic response) {
-    if (statusCode == 400 || statusCode == 402 || statusCode == 403) {
-      return ServerFailure(response["error"]["message"]);
-    } else if (statusCode == 404) {
-      return ServerFailure("Your Request not found, please try again later");
-    } else if (statusCode == 500) {
-      return ServerFailure("Internal Server Error");
-    } else {
-      return ServerFailure("There is an Error, Please try again");
-    }
-  }
-  factory ServerFailure.fromDioException(DioException dioException) {
+  ServerFailure(super.errMessage);
+
+  factory ServerFailure.fromDioError(DioException dioException) {
     switch (dioException.type) {
       case DioExceptionType.connectionTimeout:
-        return ServerFailure("connection Timeout with api server ");
-      case DioExceptionType.sendTimeout:
-        return ServerFailure("send Timeout with api server");
+        return ServerFailure('Connection timeout with ApiServer');
 
+      case DioExceptionType.sendTimeout:
+        return ServerFailure('Send timeout with ApiServer');
       case DioExceptionType.receiveTimeout:
-        return ServerFailure("Receive Timeout with api server");
+        return ServerFailure('Receive timeout in response from ApiServer');
       case DioExceptionType.badCertificate:
-        return ServerFailure("connectionTimeout");
+        return ServerFailure('Bad certificate exception');
       case DioExceptionType.badResponse:
-        return ServerFailure.fromResponseError(
+        return ServerFailure.fromResponse(
             dioException.response!.statusCode, dioException.response);
       case DioExceptionType.cancel:
-        return ServerFailure("Request to api server was canceled");
+        return ServerFailure('Request canceled');
       case DioExceptionType.connectionError:
-        return ServerFailure("Check Your Internet Conection");
+        return ServerFailure('Connection error occurred');
       case DioExceptionType.unknown:
-        return ServerFailure("connection Error");
+        return ServerFailure('An unexpected error occurred');
       default:
-        return ServerFailure("There is an Error, Please try again");
+        return ServerFailure('Unexpected error occurred');
+    }
+  }
+  factory ServerFailure.fromResponse(int? statusCode, dynamic response) {
+    if (statusCode == 400 || statusCode == 401 || statusCode == 403) {
+      return ServerFailure(response['error']['message']);
+    } else if (statusCode == 404) {
+      return ServerFailure('Your request not found, Please try later!');
+    } else if (statusCode == 500) {
+      return ServerFailure('Internal Server error, Please try later');
+    } else {
+      return ServerFailure('Opps There was an Error, Please try again');
     }
   }
 }

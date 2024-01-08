@@ -1,4 +1,4 @@
-import 'package:bookstore/core/utils/text_styles.dart';
+import 'package:bookstore/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -34,7 +34,7 @@ class CustomButton extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: TextStyles.textStyle18.copyWith(
+          style: Styles.textStyle18.copyWith(
             color: textColor,
             fontWeight: FontWeight.w900,
             fontSize: fontSize,
