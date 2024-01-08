@@ -1,30 +1,46 @@
-# Bookstore Concept App
+<!-- Hey there! Welcome to my GitHub profile 👋 -->
 
-Welcome to the Bookstore Concept App, an innovative Flutter project dedicated to offering a seamless and captivating experience for exploring books sourced from the Google Books API. This project embraces a dark theme to provide an immersive reading environment and implements robust Flutter architecture following MVVM design principles.
+# Hi there, I'm Mahmoud! 👨‍💻
+<!-- <h1 align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=👋This+is+mahmood+hamdi...;Nice+to+meet+you!&center=true&size=30">
+  </a>
+</h1> -->
+Welcome to my coding space! I'm a passionate Flutter developer 🚀 currently navigating the exciting world of Software Engineering 📚. I love turning ideas into reality using Dart/Flutter.
 
-## Screenshots
+## 💻 Tech Stack
 
-### Dark Theme
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=dart,flutter,firebase,photoshop,xd,figma,vscode,androidstudio,git,github&theme=dark" alt="Tech Stack" />
+</p>
 
-<div align="center">
-   <img src="assets/images/booklist.png" alt="Book List" width="200"/>  
-  <img src="assets/images/Deatails.png" alt="Deatails" width="200"/>
+## 🌐 Connect with Me
 
- </div>
+<p align="left">
+  <a href="https://www.linkedin.com/in/mahmoud-hamdy-alashwah/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="40" height="40" alt="LinkedIn" style="margin-right: 15px;" />
+  </a>
+  <a href="https://wakatime.com/@mahmoud_hamdy" target="_blank">
+    <img src="https://wakatime.com/static/img/wakatime.svg" width="40" height="40" alt="Wakatime" style="margin-right: 15px;" />
+  </a>
+  <a href="mailto:hmdy7486@gmail.com" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" width="40" height="40" alt="Gmail" style="margin-right: 15px;" />
+  </a>
+  <a href="https://www.facebook.com/MahmoudHamdyElashwah/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/facebook/default.svg" width="40" height="40" alt="Facebook" style="margin-right: 15px;" />
+  </a>
+</p>
 
-## Project Overview
+## 🔥 GitHub Stats
 
-### Features
+- ### Profile Views: ![Profile Views](https://komarev.com/ghpvc/?username=mahmoodhamdi&label=Profile%20views&color=0e75b6&style=flat)
 
-- **Book Exploration:** Seamlessly browse a vast collection of books sourced from the Google Books API.
-- **Dark Theme:** Immerse yourself in an optimal reading environment with the exclusively designed dark theme.
-- **Book Details:** Access detailed information about each book, including synopsis, author details, and reviews.
-- **Book Preview:** Preview select pages of a book to get a glimpse before making a choice.
+- ### GitHub Streak: ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=mahmoodhamdi&theme=tokyonight&hide_border=true)
 
-### Tech Stack
+- ### Top Languages: ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mahmoodhamdi&theme=chartreuse-dark)
 
-- **Flutter:** Harness the power of Flutter for cross-platform mobile development, ensuring a smooth and consistent experience.
-- **MVVM Architecture:** Implement the Model-View-ViewModel design pattern for a scalable, organized, and easily maintainable codebase.
-- **State Management:** Utilize efficient state management techniques for handling application state in a streamlined manner.
-- **Google Books API Integration:** Seamlessly integrate and retrieve book data from the Google Books API using efficient network requests.
-- **SOLID Principles:** Adhere to SOLID principles to ensure a robust and maintainable software architecture.
+## 📊 Weekly Development Stats
+
+<p align="left">
+  <img src="https://wakatime.com/share/@mahmoud_hamdy/37fa5f30-174a-49e1-beca-55fc70dbb800.png" alt="Weekly Development Stats" />
+</p>
